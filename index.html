@@ -28,6 +28,7 @@
     <div class="slides">
         <section>
             <h1>BEM</h1>
+            <h2>How to start</h2>
             <p>
                 <small>Created by <a href="https://github.com/mikhailnakanechny">Mikhail Nakanechny</a> in <a
                         href=https://github.com/hakimel/./>reveal.js</a></small>
@@ -36,32 +37,32 @@
         <section>
             <section>
                 <h4>What is BEM?</h4>
-            </section>
-            <section>
-                <p> BEM — Block Element Modifier is a methodology that helps you to create reusable components and code
+                <p class="fragment"> BEM — Block Element Modifier is a methodology that helps you to create reusable
+                    components and code
                     sharing in front-end development</p>
             </section>
             <section>
                 <h4>Why people use BEM?</h4>
-                <p> BEM provides unified code generation and storage rules that help you scale and reuse code, increase
+                <p class="fragment"> BEM provides unified code generation and storage rules that help you scale and
+                    reuse code, increase
                     productivity, and simplify team work.
                 </p>
             </section>
             <section>
                 <h4>Who use BEM?</h4>
-                <img src="./img/companies.png" alt="who use BEM" width="600">
-                <p> BEM methodology is in great demand in the modern front-end market.</p>
+                <img class="fragment" src="./img/companies.png" alt="who use BEM" width="600">
+                <p class="fragment"> BEM methodology is in great demand in the modern front-end market.</p>
             </section>
         </section>
 
         <section>
             <section>
                 <h4>What is applicable?</h4>
-                <p>
+                <p class="fragment">
                     BEM is not just for CSS. it is about communicating between
                     technologies and the people using them.
                 </p>
-                <ul>
+                <ul class="fragment">
                     <li>Design</li>
                     <li>Markup</li>
                     <li>Styles</li>
@@ -70,21 +71,18 @@
             </section>
         </section>
         <section>
-            <section>
-                <h4>I focused on BEM in HTML and CSS</h4>
-            </section>
+
             <section>
                 <h4>BEM entity</h4>
-                <p> Blocks, elements, and modifiers are all called BEM entities.</p>
-                <img src="./img/BEM-img1.png" alt="BEM entities" width="600">
+                <p class="fragment"> Blocks, elements, and modifiers are all called BEM entities.</p>
+                <img class="fragment" src="./img/BEM-img1.png" alt="BEM entities" width="600">
 
             </section>
             <section>
-                <p><em>B</em> . e . m .</p>
-                <p>is Blocks.</p>
-                <p>Standalone entity that is meaningful on its own.</p>
-                <p>Blocks are represented by the class attribute</p>
-                <pre><code>
+                <p><span class="fragment highlight-red"><em>B</em></span> . e . m .</p>
+                <p class="fragment">is Blocks.</p>
+                <p class="fragment">Standalone entity that is meaningful on its own.</p>
+                <pre class="fragment"><code>
                     header,
                     container,
                     menu,
@@ -102,10 +100,11 @@
                 </pre>
             </section>
             <section>
-                <p>b . <em>E</em> . m .</p>
-                <p>is Elements.</p>
-                <p>A part of a block that has no standalone meaning and is semantically tied to its block.</p>
-                <pre><code>
+                <p>b . <span class="fragment highlight-red"><em>E</em></span> . m .</p>
+                <p class="fragment">is Elements.</p>
+                <p class="fragment">A part of a block that has no standalone meaning and is semantically tied to its
+                    block.</p>
+                <pre class="fragment"><code>
                     menu item,
                     list item,
                     checkbox caption,
@@ -122,10 +121,10 @@
                 </pre>
             </section>
             <section>
-                <p>b . e . <em>M</em> .</p>
-                <p>is Modifiers.</p>
-                <p>A flag on a block or element. Use them to change appearance or behavior.</p>
-                <pre><code>
+                <p>b . e . <span class="fragment highlight-red"><em>M</em></span> .</p>
+                <p class="fragment">is Modifiers.</p>
+                <p class="fragment">A flag on a block or element. Use them to change appearance or behavior.</p>
+                <pre class="fragment"><code>
                     disabled,
                     highlighted,
                     checked,
@@ -148,96 +147,107 @@
         <section>
             <section>
                 <h4>Naming Convention</h4>
-                <p>The name of a BEM entity is unique.</p>
-                <p>The same BEM entity always has the same name in all technologies
-                    (CSS, JavaScript, and HTML). The primary purpose of the naming convention is to give names meaning
-                    so that they are as informative as possible for the developer.</p>
+                <div style="font-size: 0.6em; padding: 0; text-align: left">
+                    <p class="fragment fade-in-then-semi-out">- The name of a BEM entity is unique</p>
+                    <p class="fragment fade-in-then-semi-out">- The same BEM entity always has the same name in all
+                        technologies (CSS, JavaScript, HTML)</p>
+                    <p class="fragment fade-in-then-semi-out">- The primary purpose of the naming convention is to give
+                        names meaning
+                        so that they are as informative as possible for the developer</p>
+                </div>
             </section>
             <section>
                 <h3>Naming rules</h3>
                 <p><em>block-name__elem-name_mod-name_mod-val</em></p>
-                <pre>
-- Names are written in lowercase Latin letters.
-- Words are separated by a hyphen (-).
-- The block name defines the namespace
-  for its elements and modifiers.
-- The element name is separated from the block name
-  by a double underscore (__).
-- The modifier name is separated from the block
-  or element name by a single underscore (_).
-- The modifier value is separated from the modifier name
-  by a single underscore (_).
-- For boolean modifiers, the value is not included in the name.
-                </pre>
+                <div style="font-size: 0.6em; padding: 0; text-align: left">
+                    <p class="fragment fade-in-then-semi-out">- Names are written in lowercase Latin letters</p>
+                    <p class="fragment fade-in-then-semi-out">- Words are separated by a hyphen (-)</p>
+                    <p class="fragment fade-in-then-semi-out">- The block name defines the namespace
+                        for its elements and modifiers.</p>
+                    <p class="fragment fade-in-then-semi-out">- The element name is separated from the block name
+                        by a double underscore (__).</p>
+                    <p class="fragment fade-in-then-semi-out">- The modifier name is separated from the block
+                        or element name by a underscore (_).</p>
+                    <p class="fragment fade-in-then-semi-out">- The modifier value is separated from the modifier name
+                        by a underscore (_).</p>
+                    <p class="fragment fade-in-then-semi-out">- For boolean modifiers, the value is not included in the
+                        name.
+                    </p>
+                </div>
             </section>
             <section data-markdown>
                 <script type="text/template">
-                    ## Example for HTML
                     ```
-                    <!-- `logo` block -->
                     <div class="logo logo_theme_islands">
                         <img src="URL" alt="logo" class="logo__img">
                     </div>
-
-                    <!-- `user` block-->
                     <div class="user user_theme_islands">
                         <img src="URL" alt="user-logo" class="user__img">
-                        ...
                     </div>
-                    ```
-                </script>
-            </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Example for CSS
-                    ```
-                    .logo {}              /* CSS class for the block */
-
-                    .logo__img {}         /* CSS class for the element */
-
-                    .logo_theme_islands {}/* CSS class for the modifier */
-
-                    .user {}              /* CSS class for the block */
-
-                    .user__img {}         /* CSS class for the element */
-
-                    .user_theme_islands {}/* CSS class for the modifier */
+                    <style type="text/css">
+                        .logo {}                  /* CSS class for the block */
+                        .logo__img {}             /* CSS class for the element */
+                        .logo_theme_islands {}    /* CSS class for the modifier */
+                        .user {}                  /* CSS class for the block */
+                        .user__img {}             /* CSS class for the element */
+                        .user_theme_islands {}    /* CSS class for the modifier */
+                    </style>
                     ```
                 </script>
 
-            </section>
-
-            <section>
-                <h4>How to switch to BEM-style CSS</h4>
-                <pre>
-To implement BEM principles in a project:
-
--Put aside the DOM model and learn to create blocks.
--Don't use ID selectors or tag selectors.
--Minimize the number of nested selectors.
--Use the CSS class naming convention in order to avoid name
-ollisions and make selector names as informative and clear .
--Work in the terms of blocks, elements, and modifiers.
--Move CSS properties of a block to modifiers.
--Use mixes.
--Divide code into small independent parts.
--Re-use blocks.
-                </pre>
-            </section>
+             </section>
 
         </section>
 
+        <section>
+            <h4>How to switch to BEM-style CSS</h4>
+            <div style="font-size: 0.6em; padding: 0; text-align: left">
+                <p class="fragment fade-in-then-semi-out">- Put aside the DOM model and learn to create blocks</p>
+                <p class="fragment fade-in-then-semi-out">- Don't use ID selectors or tag selectors</p>
+                <p class="fragment fade-in-then-semi-out">- Minimize the number of nested selectors</p>
+                <p class="fragment fade-in-then-semi-out">- Use the CSS class naming convention in order to avoid name
+                    collisions and make selector names as informative and clear</p>
+                <p class="fragment fade-in-then-semi-out">- Work in the terms of blocks, elements, and modifiers</p>
+                <p class="fragment fade-in-then-semi-out">- Move CSS properties of a block to modifiers</p>
+                <p class="fragment fade-in-then-semi-out">- Divide code into small independent parts</p>
+                <p class="fragment fade-in-then-semi-out">- Re-use blocks</p>
+            </div>
+        </section>
 
         <section>
-            <h4>LINKS</h4>
-            <p><a href="https://en.bem.info/">bem.info/</a></p>
-            <p><a href="http://getbem.com/introduction/">getbem.com</a></p>
-            <p><a href="https://habr.com/post/203440/">Верстка для самых маленьких. Верстаем страницу по БЭМу</a></p>
-            <p><a href="https://www.slideshare.net/BobDonderwinkel/bem-presentation-40907446">The benefits of BEM
-                CSS</a></p>
-            <p><a href="https://wsd.events/2015/11/28/pres/bem-in-the-wild/#49">bem-in-the-wild</a></p>
-            <p><a href="https://www.youtube.com/watch?v=lQPs20b3Ey8">Зачем нужен БЭМ — HTML Шорты</a></p>
+
+            <section>
+                <h4>What next</h4>
+
+                <p  style="font-size: 0.8em;">BEM covers almost all aspects of frontend development, we have studied only the basis - splitting
+                    into BEM entities and naming.</p>
+                <div style="font-size: 0.6em; padding: 0; text-align: left">
+                    <p class="fragment fade-in-then-semi-out">When you have mastered CSS naming then proceed to the study of the other parts of BEM:</p>
+                    <p class="fragment fade-in-then-semi-out">- get to the file structure organization</p>
+                    <p class="fragment fade-in-then-semi-out">- understand BEM tree</p>
+                    <p class="fragment fade-in-then-semi-out">- start using these concepts in JS</p>
+                    <p class="fragment fade-in-then-semi-out">- learn BEM tools</p>
+                </div>
+                <p class="fragment fade-in-then-semi-out">Аs guru BEM says: ”BEM Will Make You Happy” )))</p>
+
+            </section>
+            <section>
+                <h4>LINKS</h4>
+                <div>
+                    <p>Motivation</p>
+                    <p><a href="https://www.youtube.com/watch?v=lQPs20b3Ey8">Зачем нужен БЭМ — HTML Шорты</a></p>
+                    <p><a href="https://wsd.events/2015/11/28/pres/bem-in-the-wild/#49">bem-in-the-wild</a></p>
+                </div>
+                <div>
+                    <p>Technical</p>
+                    <p><a href="https://en.bem.info/">bem.info/</a></p>
+                    <p><a href="http://getbem.com/introduction/">getbem.com</a></p>
+                    <p><a href="https://www.slideshare.net/BobDonderwinkel/bem-presentation-40907446">The benefits of
+                        BEM
+                        CSS</a></p>
+                </div>
+            </section>
         </section>
 
     </div>
